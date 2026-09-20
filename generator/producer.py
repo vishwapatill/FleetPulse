@@ -9,11 +9,6 @@ import copy
 from datetime import datetime, timedelta
 
 
-# ============================================================
-# CONFIGURATION
-# =======================
-# =====================================
-
 KAFKA_SERVER = "localhost:9093"
 TOPIC = "taxi-data"
 
@@ -71,9 +66,6 @@ df.drop(
 print(f"Loaded {len(df)} taxi records.")
 
 
-# ============================================================
-# GENERATE REAL-TIME TIMESTAMPS
-# ============================================================
 
 def generate_times(duration):
 
@@ -86,10 +78,6 @@ def generate_times(duration):
         "dtime": dropoff.isoformat()
     }
 
-
-# ============================================================
-# INVALID DATA GENERATOR
-# ============================================================
 
 def inject_invalid_data(record):
 
