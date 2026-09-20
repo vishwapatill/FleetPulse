@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 # =====================================
 
 KAFKA_SERVER = "localhost:9093"
-TOPIC = "taxi"
+TOPIC = "taxi-data"
 
 DATA_FILE = "data/green_tripdata_2026-01.parquet"
 
